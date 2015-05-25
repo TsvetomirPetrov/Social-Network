@@ -1,0 +1,44 @@
+<div class="public-screen">
+    <h1>Register</h1>
+    <p>
+        Username
+    </p>
+    <p>
+        <input type="text" id="username" ng-model="userData.username" required />
+    </p>
+    <p>
+        Password
+    </p>
+    <p>
+        <input type="password" id="password" ng-model="userData.password" required />
+    </p>
+    <p>
+    <p>
+        Confirm password
+    </p>
+    <input type="password" id="confirmPassword" ng-model="userData.confirmPassword" required />
+    </p>
+    <p>
+        Name
+    </p>
+    <p>
+        <input type="text" id="name" ng-model="userData.name" required />
+    </p>
+    <p>
+        Email
+    </p>
+    <p>
+        <input type="text" id="email" ng-model="userData.email" required />
+    </p>
+    <p>
+        Gender
+    </p>
+    <div>
+        <input type="radio" name="gender" value="male"/>Male
+        <input type="radio" name="gender" value="female"/>Female
+        <input type="radio" name="gender" value="other"/>Other
+    </div>
+    <p>
+        <a ng-click="register(userData)" class="button">Register</a>
+    <p>
+</div>

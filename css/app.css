@@ -1,0 +1,31 @@
+.public-screen {
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 2%;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.button {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+    background: #5B9BD5;
+    border: 2px solid #41719C;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 5px 10px 0px 10px;
+    outline: none;
+}
+
+.button:hover {
+    background: #9DC3E6;
+    border: 2px solid #41719C;
+    text-decoration: none;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+    cursor: pointer;
+}
