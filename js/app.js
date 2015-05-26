@@ -2,26 +2,28 @@
 
 var app = angular.module('app', ['ngRoute', 'ngResource']);
 
-app.constant('baseServiceUrl', 'http://softuni-social-network.azurewebsites.net');
-app.constant('pageSize', 5);
+app.constant('baseServiceUrl', 'http://softuni-social-network.azurewebsites.net/api/')
 
-app.config(function ($routeProvider) {
+app.config(['$routeProvider', function ($routeProvider) {
 
     $routeProvider.when('/', {
-        templateUrl: "templates/public-screen/home.html",
-        controller: "HomeController"
+        templateUrl: 'templates/home.html',
+        controller: 'HomeController'
     });
 
     $routeProvider.when('/login', {
-        templateUrl: 'templates/public-screen/login.html',
+        templateUrl: 'templates/login.html',
         controller: 'LoginController'
     });
 
     $routeProvider.when('/register', {
-        templateUrl: 'templates/public-screen/register.html',
+        templateUrl: 'templates/register.html',
         controller: 'RegisterController'
     });
-});
 
-app.run('/');
+    $routeProvider.otherwise({
+        redirectTo: '/'
+    });
+}]);
+
 
