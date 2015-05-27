@@ -1,15 +1,6 @@
-<div id="wrapper">
-    <div class="public-screen">
-        <h1>Home</h1>
-        <div>
-            <a href="#/login">
-                <button type="button" class="button">Login</button>
-            </a>
-        </div>
-        <div>
-            <a href="#/register">
-                <button type="button" class="button">Register</button>
-            </a>
-        </div>
-    </div>
-</div>
+<span ng-if = '!isLoggedIn'>
+        <div data-ng-include="'templates/home-view.html'"></div>
+    </span>
+<span ng-if = 'isLoggedIn'>
+        <div data-ng-include="'templates/user-homescreen.html'"></div>
+    </span>

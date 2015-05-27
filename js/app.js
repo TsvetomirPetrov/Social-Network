@@ -2,7 +2,7 @@
 
 var app = angular.module('app', ['ngRoute', 'ngResource']);
 
-app.constant('baseServiceUrl', 'http://softuni-social-network.azurewebsites.net/api/')
+app.constant('baseServiceUrl', 'http://softuni-social-network.azurewebsites.net/')
 
 app.config(['$routeProvider', function ($routeProvider) {
 
